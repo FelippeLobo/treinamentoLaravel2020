@@ -40,6 +40,28 @@
 						</a>
 					</li>
 				@endcan
+				@can('viewAny', App\User::class)
+				<li class="nav-item has-treeview ">
+					<a href="{{ route('categories.index') }}"
+						class="nav-link {{ Route::is('categories.index') ? 'active' : '' }}">
+						<i class="nav-icon fas fa-clipboard-list"></i>
+						<p>
+							Categorias
+						</p>
+					</a>
+				</li>
+			@endcan
+			@can('viewAny', App\User::class)
+				<li class="nav-item has-treeview ">
+					<a href="{{ route('lessons.index') }}"
+						class="nav-link {{ Route::is('categories.index') ? 'active' : '' }}">
+						<i class="nav-icon fas fa-school"></i>
+						<p>
+							Aulas
+						</p>
+					</a>
+				</li>
+			@endcan
 			</ul>
 		</nav>
 	</div>

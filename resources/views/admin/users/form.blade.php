@@ -23,7 +23,7 @@
             </div>
             <div class="form-group col-12">
                 <label for="confirm_password">Confirme sua senha </label>
-                <input type="password" name="confirm_password" autocomplete="password" id="password" class="form-control">
+                <input type="password" name="password_confirmation" autocomplete="password" id="password" class="form-control">
             </div>
         @else
             <div class="form-group col-12">
@@ -32,7 +32,7 @@
             </div>
             <div class="form-group col-12">
                 <label for="confirm_password" class="required">Confirme sua senha </label>
-                <input type="password" name="confirm_password" id="password" required class="form-control">
+                <input type="password" name="password_confirmation" id="password" required class="form-control">
             </div>
         @endif
     @endif
